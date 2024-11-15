@@ -11,7 +11,7 @@ fastify.get("/", (request, reply) => {
 });
 
 // Nombre de las rutas
-const routeName = ['registro']
+const routeName = ['registro','auth']
 
 // funcion que carga las rutas
 routeName.forEach((route) => {
