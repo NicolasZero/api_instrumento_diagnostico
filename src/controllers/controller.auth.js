@@ -26,7 +26,7 @@ const auth = async (request, reply) => {
             return reply.code(200).send({ error: "Usuario o contraseña incorrecta", status: "failed" });
         }
 
-        return reply.code(200).send({ data: true, status: "OK" });
+        return reply.code(200).send({ data: true, status: "OK",rol:resp.rows[0].rol });
 
     } catch (error) {
         reply.code(500).send({ error: "Error interno", status: "failed" });
