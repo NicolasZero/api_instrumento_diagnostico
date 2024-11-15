@@ -1,3 +1,4 @@
+--version 3
 CREATE TABLE usuarios (
     id integer NOT NULL UNIQUE GENERATED ALWAYS AS IDENTITY (START WITH 1),
     username varchar NOT NULL UNIQUE,
@@ -6,7 +7,8 @@ CREATE TABLE usuarios (
     last_name varchar NOT NULL,
     password varchar NOT NULL,
     is_active boolean DEFAULT true,
-    rol varchar NOT NULL DEFAULT 'usuario'
+    rol varchar NOT NULL DEFAULT 'usuario',
+    primary key(id)
 )
 
 CREATE TABLE diagnostico(
@@ -177,5 +179,6 @@ CREATE TABLE diagnostico(
     nombre_enlace_inm varchar,
     apellido_enlace_inm varchar,
     cedula_enlace_inm varchar,
-    cargo_enlace_inm varchar
+    cargo_enlace_inm varchar,
+    primary key(id)
 );
