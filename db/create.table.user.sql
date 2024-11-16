@@ -1,4 +1,4 @@
--- Si esta usando la primera version de create.table.sql. Necesitara aplicar este archivo
+-- Si no usando la version 2 o superior de create.table.sql. Necesitara aplicar este archivo
 -- Esta separado por si ya esta creada la tabla diagnostico
 CREATE TABLE usuarios (
     id integer NOT NULL UNIQUE GENERATED ALWAYS AS IDENTITY (START WITH 1) ,
